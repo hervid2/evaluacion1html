@@ -44,7 +44,31 @@
                 <input type="email" id="E-mail" placeholder="escriba su E-mail" required>
             </div>
             <br><hr>
-
+            <h5>Información de solicitud</h5>
+            </div>
+            <div>
+                <label for="fecha de vencimiento">Fecha de vencimiento:</label>
+                <input type="date" name="fecha" id="fecha" required>
+            </div>
+            <br>
+            <div>
+                <label for="Asunto">Asunto:</label>
+                <input type="text" placeholder="describa en 2 palabras" required minlength="8" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label for="Descripción">Descripción</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Describa su asunto" required minlength="120" maxlength="300"></textarea>
+            </div>
+            <br>
+            <div>
+            <label for="Adjunto">Adjunto:</label>
+            <input type="file" name="file" accept=".png, .jpg" multiple>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar" required>
+            </div>
         </form>
     </section>
 </body>
