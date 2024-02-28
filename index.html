@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 1 Hernán David Cardona</title>
+</head>
+<body>   
+    <section>
+        <form method="get">
+            <div>
+                <label for="text">Número incidencia:</label>
+                <input type="text" placeholder="Q1167" readonly>
+                <label for="Fecha">Fecha/hora de recepción:</label>
+                <input type="datetime-local" name="Fecha" id="hora" required>
+            </div>
+            <div>
+                <h5>Información de usuario</h5>
+            </div>
+            <div>
+                <label for="nombre">Nombre del cliente:</label>
+                <input type="text" id="nombre" placeholder="Escriba su nombre" required pattern="[A-Z a-z]+" minlength="10" maxlength="30">
+                <label for="identificación">identificación</label>
+                <input type="number" placeholder="Escriba su numero de ID" required pattern="number">
+            </div>
+            <br>
+            <div>
+                <label for="Identificación">Tipo identificación:</label>
+                <select name="Tipo de identificación" id="Tipo de identificación" required>
+                    <option value="1">CC</option>
+                    <option value="2">TI</option>
+                    <option value="3">CE</option>
+                </select>
+                <label for="Tipo de solicitante">Tipo de solicitante</label>
+                <select name="Tipo de solicitante" id="Tipo de solicitante" required>
+                    <option value="1">03-Docente</option>
+                    <option value="2">04-Estudiante</option>
+                    <option value="3">05-Acudiente</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="E-mail" placeholder="escriba su E-mail" required>
+            </div>
+            <br><hr>
+            <div>
+                <h5>Información de contacto</h5>
+            </div>
+            <div>
+                <label for="País">País:</label>
+                <input type="text" placeholder="Escriba su país" required pattern="[A-Z a-z]+">
+                <label for="Departamento">Departamento:</label>
+                <input type="text" placeholder="Escriba su departamento" required pattern="[A-Z a-z]+" minlength="5" maxlength="20"> 
+            </div>
+            <br>
+            <div>
+                <label for="Ciudad">Ciudad:</label>
+                <input type="text" placeholder="Escriba su ciudad" required pattern="[A-Z a-z]+" minlength="5" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label for="Teléfono">Teléfono</label>
+                <input type="number" placeholder="Digite su teléfono" required pattern="number">
+                <label for="Celular">Celular</label>
+                <input type="number" placeholder="Digite su celular" required pattern="number">
+            </div>
+            <br>
+            <div>
+                <label for="Medio de contacto">Medio de contacto preferido:</label>
+                <select name="Medio de contacto" id="Medio de contacto" required>
+                    <option value="1">Correo escrito</option>
+                    <option value="2">Whatsapp</option>
+                    <option value="3">Llamada telefónica</option>
+                </select>
+                <label for="Dirección:"></label>
+                <input type="text" placeholder="Escriba su dirección" required minlength="10" maxlength="40">
+            </div>
+            <br><hr>
+            <div>
+            <h5>Información de solicitud</h5>
+            </div>
+            <div>
+                <label for="fecha de vencimiento">Fecha de vencimiento:</label>
+                <input type="date" name="fecha" id="fecha" required>
+            </div>
+            <br>
+            <div>
+                <label for="Asunto">Asunto:</label>
+                <input type="text" placeholder="describa en 2 palabras" required minlength="8" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label for="Descripción">Descripción</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Describa su asunto" required minlength="120" maxlength="300"></textarea>
+            </div>
+            <br>
+            <div>
+            <label for="Adjunto">Adjunto:</label>
+            <input type="file" name="file" accept=".png, .jpg" multiple>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar" required>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
