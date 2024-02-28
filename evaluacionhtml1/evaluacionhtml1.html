@@ -44,7 +44,40 @@
                 <input type="email" id="E-mail" placeholder="escriba su E-mail" required>
             </div>
             <br><hr>
-
+            <div>
+                <h5>Información de contacto</h5>
+            </div>
+            <div>
+                <label for="País">País:</label>
+                <input type="text" placeholder="Escriba su país" required pattern="[A-Z a-z]+">
+                <label for="Departamento">Departamento:</label>
+                <input type="text" placeholder="Escriba su departamento" required pattern="[A-Z a-z]+" minlength="5" maxlength="20"> 
+            </div>
+            <br>
+            <div>
+                <label for="Ciudad">Ciudad:</label>
+                <input type="text" placeholder="Escriba su ciudad" required pattern="[A-Z a-z]+" minlength="5" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label for="Teléfono">Teléfono</label>
+                <input type="number" placeholder="Digite su teléfono" required pattern="number">
+                <label for="Celular">Celular</label>
+                <input type="number" placeholder="Digite su celular" required pattern="number">
+            </div>
+            <br>
+            <div>
+                <label for="Medio de contacto">Medio de contacto preferido:</label>
+                <select name="Medio de contacto" id="Medio de contacto" required>
+                    <option value="1">Correo escrito</option>
+                    <option value="2">Whatsapp</option>
+                    <option value="3">Llamada telefónica</option>
+                </select>
+                <label for="Dirección:"></label>
+                <input type="text" placeholder="Escriba su dirección" required minlength="10" maxlength="40">
+            </div>
+            <br><hr>
+            <div>
         </form>
     </section>
 </body>
